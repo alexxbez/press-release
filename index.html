@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLATO FUERTE - Press Release</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+            position: relative;
+        }
+        
+        .header-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        
+        .movie-title {
+            font-size: 4rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+            color: #ffcc00;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+        
+        .release-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .info-item {
+            background: rgba(255, 204, 0, 0.2);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #ffcc00;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .cast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .cast-member {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .cast-member:hover {
+            transform: translateY(-5px);
+        }
+        
+        .cast-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .cast-details {
+            padding: 15px;
+        }
+        
+        .cast-name {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #ffcc00;
+        }
+        
+        .cast-role {
+            font-style: italic;
+            color: #ccc;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .press-contact {
+            background: rgba(255, 204, 0, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .contact-details {
+            margin-top: 20px;
+        }
+        
+        .contact-details div {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-details i {
+            margin-right: 10px;
+            color: #ffcc00;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: background 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: #ffcc00;
+            color: black;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.9);
+            margin-top: 40px;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .movie-title {
+                font-size: 2.5rem;
+            }
+            
+            .release-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .cast-grid, .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://placehold.co/1200x400/2c5364/white?text=PLATO+FUERTE" alt="Plato Fuerte Banner" class="header-img">
+            <h1 class="movie-title">Plato Fuerte</h1>
+            <p class="tagline">Dónde lo imposible no existe</p>
+            <div class="release-info">
+                <div class="info-item">Premiere 11 Septiembre, 2025</div>
+                <div class="info-item">Tec de Monterrey 5 pm</div>
+            </div>
+        </header>
+        
+        <div class="content">
+            <section class="synopsis">
+                <h2>Sinopsis</h2>
+                <p>En un futuro donde los humanos son criados y consumidos como ganado, María, esposa del poderoso dueño de la corporación EatThem, recibe en su hogar a "1930", un prisionero destinado a morir. Lo que parece un pedido rutinario pronto se convierte en una pesadilla, cuando 1930 descubre que su hijo también está marcado para el sacrificio y decide tomar venganza y lo imposible no existe.</p>
+            </section>
+            
+            <section class="cast">
+                <h2>Cast</h2>
+                <div class="cast-grid">
+                    <div class="cast-member">
+                        <img src="https://placehold.co/250x250/203a43/white?text=Mariana+Vega" alt="Mariana Vega" class="cast-img">
+                        <div class="cast-details">
+                            <div class="cast-name">Mariana Vega</div>
+                            <div class="cast-role">María Valdéz</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cast-member">
+                        <img src="mike.jpeg" alt="Mike Amez" class="cast-img">
+                        <div class="cast-details">
+                            <div class="cast-name">Mike Amez</div>
+                            <div class="cast-role">Miguel Valdéz</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cast-member">
+                        <img src="regina.jpg" alt="Regina Aguilar" class="cast-img">
+                        <div class="cast-details">
+                            <div class="cast-name">Regina Aguilar</div>
+                            <div class="cast-role">1930</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cast-member">
+                        <img src="https://placehold.co/250x250/203a43/white?text=Peralta+García" alt="Peralta García" class="cast-img">
+                        <div class="cast-details">
+                            <div class="cast-name">Peralta García</div>
+                            <div class="cast-role">1961</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="creative-team">
+                <h2>Equipo Creativo</h2>
+                <p><strong>Dirigida por:</strong> Valeria Rivera Alba</p>
+                <p><strong>Escrita por:</strong> Isabella Jiménez Villeda, Valeria Rivera Alba, Alejandro Benitez Bravo, Guillermo Gael Neri Villeda y Omar Alejandro Melendrez Benitez.</p>
+                <p><strong>Producida por:</strong> Kathleen Kennedy, Frank Marshall</p>
+            </section>
+            
+            <section class="gallery-section">
+                <h2>Stills</h2>
+                <div class="gallery">
+                    <img src="https://placehold.co/300x200/2c5364/white?text=Movie+Still+1" alt="Movie Still 1" class="gallery-item">
+                    <img src="https://placehold.co/300x200/2c5364/white?text=Movie+Still+2" alt="Movie Still 2" class="gallery-item">
+                    <img src="https://placehold.co/300x200/2c5364/white?text=Movie+Still+3" alt="Movie Still 3" class="gallery-item">
+                </div>
+            </section>
+            
+            <section class="press-contact">
+                <h2>Press Contact</h2>
+                <p>¡Contáctanos aquí!</p>
+                
+                <div class="contact-details">
+                    <div><i class="fas fa-user"></i> Valeria Rivera Alba - Directora</div>
+                    <div><i class="fas fa-envelope"></i> a01708369@tec.mx</div>
+                    <div><i class="fas fa-phone"></i> 712 134 8739</div>
+                    <div><i class="fas fa-map-marker-alt"></i> Instituto Tecnológico de Estudios Superiores de Monterrey</div>
+                </div>
+                
+            </section>
+        </div>
+        
+        <footer>
+            <div class="logo">PLATO FUERTE</div>
+            <p>© 2025 Horror Film Studios. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
